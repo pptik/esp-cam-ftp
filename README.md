@@ -26,6 +26,7 @@
 ### 1. Untuk Setting Wifi dan FTP ikuti langkar berikut: 
 - Buka file [.ino].
 - Untuk Setting wifi ganti parameter berikut sesuai dengan wifi yangg digunakan: 
+
   '''
   const char* ssid = "nama wifi";
   const char* password = "password wifi";
