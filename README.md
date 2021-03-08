@@ -26,9 +26,18 @@
 ### 1. Untuk Setting Wifi dan FTP ikuti langkar berikut: 
 - Buka file [.ino].
 - Untuk Setting wifi ganti parameter berikut sesuai dengan wifi yangg digunakan: 
-
  ```
   const char* ssid = "nama wifi";
   const char* password = "password wifi";
  ```
-  
+- Untuk setting FTP ganti parameter berikut sesuai dengan FTP yang digunakan:
+ ```
+  char ftp_server[] = "FTP IP";
+  char ftp_user[]   = "FTP user";
+  char ftp_pass[]   = "FTP password";
+ ```
+  Dan untuk setting directory FTP ganti parameter berikut sesuai dengan FTP yang digunakan:
+ ```
+  ftp.ChangeWorkDir("/nama directory/");
+ ```
+- Save.
