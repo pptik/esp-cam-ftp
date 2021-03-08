@@ -23,7 +23,7 @@
     > pada aplikasi Arduino IDE Buka -> Tools -> Board -> ESP 32 Arduino -> Pilih AI Thinker ESP32-CAM.
 - Buka file [.ino](https://github.com/pptik/esp-cam-ftp/blob/main/esp32_CameraWebServer/esp32_CameraWebServer.ino) yang telah didownload. 
 
-### 1. Untuk Setting Wifi dan FTP ikuti langkar berikut: 
+### 2. Untuk Setting Wifi dan FTP ikuti langkar berikut: 
 - Buka file [.ino].
 - Untuk Setting wifi ganti parameter berikut sesuai dengan wifi yangg digunakan: 
  ```
@@ -41,3 +41,6 @@
   ftp.ChangeWorkDir("/nama directory/");
  ```
 - Save.
+
+
+### 3. Untuk Upload program ikuti langkah berikut:
