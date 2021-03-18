@@ -47,5 +47,5 @@
 - Pastikan board yang digunakan adalah ESP 32 -> **AI Thinker ESP32-CAM**
 - Tentukan Port yang digunakan, 
   - Windows : Pilih port yang digunakan dengan nama COM , untuk menentukan port ESP dapat dilihat di Device Manager -> Ports (COMN & LPT) -> Sambungkan ESP ke Komputer maka akan ada port baru yang muncul. Port itulah yang akan digunakan pada Arduino IDE.
-  - Linux : Pilih port yang digunakan dengan /dev/ttyUSB, untuk menentukan port ESP dapat dilihat di dengan perintah 'dmesg | tail -f'.
-- Uplload program dengan menekan tombol panah pada Arduino IDE, atau dengan shortcut 'Ctrl + U'.
+  - Linux : Pilih port yang digunakan dengan /dev/ttyUSB, untuk menentukan port ESP dapat dilihat di dengan perintah `dmesg | tail -f`.
+- Upload program dengan menekan tombol panah pada Arduino IDE, atau dengan shortcut `Ctrl + U`.
