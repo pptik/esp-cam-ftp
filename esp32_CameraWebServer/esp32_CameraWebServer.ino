@@ -29,14 +29,13 @@ String timeStamp;
 //#define CAMERA_MODEL_M5STACK_PSRAM
 //#define CAMERA_MODEL_M5STACK_WIDE
 #define CAMERA_MODEL_AI_THINKER
-
 #include "camera_pins.h"
 
 const char* ssid = "LSKK_Lantai2";
 const char* password = "lskk12345";
 
 char ftp_server[] = "192.168.4.5";
-char ftp_user[]   = "iotdevice";
+char ftp_user[]   = "iostdevice";
 char ftp_pass[]   = "1234567890";
 
 // you can pass a FTP timeout and debbug mode on the last 2 arguments
