@@ -17,7 +17,7 @@ NTPClient timeClient(ntpUDP);
 String formattedDate;
 String dayStamp;
 String timeStamp;
-String guidDevice = "b039561a-9b6d-11eb-a8b3-0242ac130003";
+const char* guidDevice = "b039561a-9b6d-11eb-a8b3-0242ac130003";
 
 //
 // WARNING!!! Make sure that you have either selected ESP32 Wrover Module,
@@ -188,7 +188,7 @@ int FTP_uploadImage(int64_t t, unsigned char * pdata, unsigned int size)
     Serial.println("Failed to obtain time");
     return -1;
   }
-  sprintf(filename,"b039561a-9b6d-11eb-a8b3-0242ac130003_%04d%02d%02d_%02d%02d%02d.jpg",
+  sprintf(filename,guidDevice,"_%04d%02d%02d_%02d%02d%02d.jpg",
     timeinfo.tm_year + 1900,
     timeinfo.tm_mon+1,
     timeinfo.tm_mday,
