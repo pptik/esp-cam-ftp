@@ -32,11 +32,11 @@ const char* guidDevice = "b039561a-9b6d-11eb-a8b3-0242ac130003";
 #define CAMERA_MODEL_AI_THINKER
 #include "camera_pins.h"
 
-const char* ssid = "LSKK_Lantai2";
-const char* password = "lskk12345";
+const char* ssid = "LSKKHomeAuto";
+const char* password = "1234567890";
 
 char ftp_server[] = "192.168.4.5";
-char ftp_user[]   = "iostdevice";
+char ftp_user[]   = "iotdevice";
 char ftp_pass[]   = "1234567890";
 
 // you can pass a FTP timeout and debbug mode on the last 2 arguments
@@ -103,7 +103,7 @@ void setup() {
     s->set_saturation(s, -2);//lower the saturation
   }
   //drop down frame size for higher initial frame rate
-  s->set_framesize(s, FRAMESIZE_QVGA);
+  s->set_framesize(s, FRAMESIZE_UXGA);
 
 #if defined(CAMERA_MODEL_M5STACK_WIDE)
   s->set_vflip(s, 1);
@@ -188,7 +188,8 @@ int FTP_uploadImage(int64_t t, unsigned char * pdata, unsigned int size)
     Serial.println("Failed to obtain time");
     return -1;
   }
-  sprintf(filename,guidDevice,"_%04d%02d%02d_%02d%02d%02d.jpg",
+  sprintf(filename,"%s_%04d%02d%02d_%02d%02d%02d.jpg",
+    guidDevice,
     timeinfo.tm_year + 1900,
     timeinfo.tm_mon+1,
     timeinfo.tm_mday,
@@ -226,6 +227,7 @@ void loop() {
   timeout += 1;
   delay(100);
 
+  //trigger with button absolutely  daijobu desu
   int value = digitalRead(16);
   // Serial.println(value);
   if(value == 0) {
