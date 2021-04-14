@@ -51,6 +51,13 @@
   ftp.ChangeWorkDir("/iotdevice/ftpcam/b039561a-9b6d-11eb-a8b3-0242ac130003");
   ```
 - Save.
+- **PASTIKAN DIREKTORY DI FTP SERVER SUDAH TERSEDIA.**
+- Jika belum, download dan install aplikasi **FileZilla Client**, dapat di download di [Download FileZilla Client](https://filezilla-project.org/).
+- Login dengan akun FTP. Untuk Port biarkan kosong karena default nya 22.
+- Masuk ke direktori tujuan upload.
+![](![Capture](https://user-images.githubusercontent.com/18458955/114655385-52449600-9d16-11eb-8a46-39e49a44021c.PNG)
+
+- Buat direktori dengan nama direktori untuk masing-masing GUID.
 
 
 ### 3. Untuk Upload program ikuti langkah berikut:
