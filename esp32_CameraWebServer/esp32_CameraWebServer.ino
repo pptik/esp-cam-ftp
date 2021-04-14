@@ -199,7 +199,7 @@ int FTP_uploadImage(int64_t t, unsigned char * pdata, unsigned int size)
     );
 
   //ftp.InitFile("Type A");
-  ftp.ChangeWorkDir("/iotdevice/ftpcam/");
+  ftp.ChangeWorkDir("/iotdevice/ftpcam/b039561a-9b6d-11eb-a8b3-0242ac130003");
   ftp.InitFile("Type I");
   ftp.NewFile(filename); // "capture.jpg");
   ftp.WriteData( pdata, size );
@@ -231,7 +231,7 @@ void loop() {
   int value = digitalRead(16);
   // Serial.println(value);
   if(value == 0) {
-    capture_ftpupload();
+    capture_ftpupload(); //capture and send image to FTP SERVER
   }
   
   if(timeout % 100 == 0) { // display time per 10 sec
