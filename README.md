@@ -55,7 +55,7 @@
 - Jika belum, download dan install aplikasi **FileZilla Client**, dapat di download di [Download FileZilla Client](https://filezilla-project.org/).
 - Login dengan akun FTP. Untuk Port biarkan kosong karena default nya 22.
 - Masuk ke direktori tujuan upload.
-![](![Capture](https://user-images.githubusercontent.com/18458955/114655385-52449600-9d16-11eb-8a46-39e49a44021c.PNG)
+[Capture](https://user-images.githubusercontent.com/18458955/114655385-52449600-9d16-11eb-8a46-39e49a44021c.PNG)
 
 - Buat direktori dengan nama direktori untuk masing-masing GUID.
 
