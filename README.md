@@ -1,6 +1,6 @@
 # ESP32 Camera FTP
 ## Deskripsi ESP32-CAM FTP
-> Mengambil gambar setiap waktu (waktu dapat diatur) dan mengirimkan gambar tersebut ke FTP server yangtersedia (FTP server dapat di atur) melalui jaringan internet.
+> Mengambil gambar setiap waktu (waktu dapat diatur) dan mengirimkan gambar tersebut ke FTP server yang tersedia (FTP server dapat di atur) melalui jaringan internet.
 
 ## Cara setting Microcontroller mikrokontroller ESP32-CAM FTP
 
@@ -59,3 +59,21 @@
   - Windows : Pilih port yang digunakan dengan nama COM , untuk menentukan port ESP dapat dilihat di Device Manager -> Ports (COMN & LPT) -> Sambungkan ESP ke Komputer maka akan ada port baru yang muncul. Port itulah yang akan digunakan pada Arduino IDE.
   - Linux : Pilih port yang digunakan dengan /dev/ttyUSB, untuk menentukan port ESP dapat dilihat di dengan perintah `dmesg | tail -f`.
 - Upload program dengan menekan tombol panah pada Arduino IDE, atau dengan shortcut `Ctrl + U`.
+
+### 4.Additional Features (Trigger Capture dengan button atau sensor)
+- Set up input pin, Contoh 
+  ```
+    pinMode(16, INPUT);
+  ```
+- Dan set kondisi apa yang akan dilakukan oleh button jika ditekan. Conth menggunakan button mengambil gambar ketika button ditekan dan di gamber dikirim ke FTP: 
+  ```
+  //trigger with button absolutely  daijobu desu
+  int value = digitalRead(16);
+  // Serial.println(value);
+  if(value == 0) {
+    capture_ftpupload();
+  }
+  ```
+  
+
+
