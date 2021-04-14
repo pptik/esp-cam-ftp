@@ -29,7 +29,7 @@
   ```
   const char* guidDevice = "b039561a-9b6d-11eb-a8b3-0242ac130003";
   ```
-  Guid Devicedapat di dapatkan dengan men-_generete_ di [Generate GUID device](https://www.uuidgenerator.net/version1).
+  Guid Devicedapat di dapatkan dengan men-_generate_ di [Generate GUID device](https://www.uuidgenerator.net/version1).
 - Untuk Setting wifi ganti parameter berikut sesuai dengan wifi yang digunakan: 
  ```
   const char* ssid = "nama wifi";
