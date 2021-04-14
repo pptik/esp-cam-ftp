@@ -67,7 +67,6 @@
   ```
 - Dan set kondisi apa yang akan dilakukan oleh button jika ditekan. Conth menggunakan button mengambil gambar ketika button ditekan dan di gamber dikirim ke FTP: 
   ```
-  //trigger with button absolutely  daijobu desu
   int value = digitalRead(16);
   // Serial.println(value);
   if(value == 0) {
