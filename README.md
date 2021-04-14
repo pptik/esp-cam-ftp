@@ -31,21 +31,21 @@
   ```
   Guid Devicedapat di dapatkan dengan men-_generate_ di [Generate GUID device](https://www.uuidgenerator.net/version1).
 - Untuk Setting wifi ganti parameter berikut sesuai dengan wifi yang digunakan: 
- ```
+  ```
   const char* ssid = "nama wifi";
   const char* password = "password wifi";
- ```
+  ```
 - Untuk setting FTP ganti parameter berikut sesuai dengan FTP yang digunakan:
- ```
+  ```
   char ftp_server[] = "FTP IP";
   char ftp_user[]   = "FTP user";
   char ftp_pass[]   = "FTP password";
- ```
+  ```
   Dan untuk setting directory FTP ganti parameter berikut sesuai dengan FTP yang digunakan:
   dengan format directory /dir/dir_with_guid_device_name
- ```
+  ```
   ftp.ChangeWorkDir("/nama directory/guid name");
- ```
+  ```
   Contoh: 
   ```
   ftp.ChangeWorkDir("/iotdevice/ftpcam/b039561a-9b6d-11eb-a8b3-0242ac130003");
