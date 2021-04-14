@@ -60,7 +60,7 @@
   - Linux : Pilih port yang digunakan dengan /dev/ttyUSB, untuk menentukan port ESP dapat dilihat di dengan perintah `dmesg | tail -f`.
 - Upload program dengan menekan tombol panah pada Arduino IDE, atau dengan shortcut `Ctrl + U`.
 
-### 4.Additional Features (Trigger Capture dengan button atau sensor)
+### 4. Additional Features (Trigger Capture dengan button atau sensor)
 - Set up input pin, Contoh 
   ```
     pinMode(16, INPUT);
