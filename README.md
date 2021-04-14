@@ -25,6 +25,11 @@
 
 ### 2. Untuk Setting Wifi dan FTP ikuti langkar berikut: 
 - Buka file [.ino](https://github.com/pptik/esp-cam-ftp/blob/main/esp32_CameraWebServer/esp32_CameraWebServer.ino).
+- Ubah parameter guid device :
+  ```
+  const char* guidDevice = "b039561a-9b6d-11eb-a8b3-0242ac130003";
+  ```
+  Guid Devicedapat di dapatkan dengan men-_generete_ di [Generate GUID device](https://www.uuidgenerator.net/version1).
 - Untuk Setting wifi ganti parameter berikut sesuai dengan wifi yang digunakan: 
  ```
   const char* ssid = "nama wifi";
@@ -37,9 +42,14 @@
   char ftp_pass[]   = "FTP password";
  ```
   Dan untuk setting directory FTP ganti parameter berikut sesuai dengan FTP yang digunakan:
+  dengan format directory /dir/dir_with_guid_device_name
  ```
-  ftp.ChangeWorkDir("/nama directory/");
+  ftp.ChangeWorkDir("/nama directory/guid name");
  ```
+  Contoh: 
+  ```
+  ftp.ChangeWorkDir("/iotdevice/ftpcam/b039561a-9b6d-11eb-a8b3-0242ac130003");
+  ```
 - Save.
 
 
